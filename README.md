@@ -18,4 +18,4 @@
 ---
 > 🙏 **Issues:** If you have any problems or bugs, contact support via our Discord: https://discord.gg/yHye8MzPjS
 ## Loadstring
-<pre lang="markdown">loadstring(game:HttpGet("https://raw.githubusercontent.com/hexpattern/Umbra/refs/heads/main/loadstring.lua"))() </pre>
+<pre lang="markdown">loadstring(game:HttpGet("https://raw.githubusercontent.com/hexpattern/Umbra/refs/heads/main/loader.lua"))() </pre>
