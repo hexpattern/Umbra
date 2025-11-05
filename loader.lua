@@ -1,6 +1,4 @@
 repeat task.wait(0.10) until game:IsLoaded();
-_G.Config = { ["Theme"] = "Dark" };
-local NotifyLib = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hexpattern/Umbra/refs/heads/main/Main/Module/Notification.lua", true))();
 local MarketplaceService = game:GetService("MarketplaceService");
 local Players = game:GetService("Players");
 
@@ -10,8 +8,6 @@ end);
 
 local experienceName = success and experienceInfo.Name or "Unknown Experience";
 local executorName = identifyexecutor and identifyexecutor() or "Unknown Executor";
-
-NotifyLib:Notify("Loading!", "Executor: "..executorName.. "\nExperience: "..experienceName, "normal", 5);
 
 local function HttpGet(url)
     local response = request({Url = url});
@@ -47,5 +43,5 @@ local ScriptURL = Scripts[GameID];
 if ScriptURL then
 	SafeRequest(ScriptURL);
 else
-	NotifyLib:Notify("Loadstring Error", "Experience not supported check discord or github for full list!", "error", 10);
+	--
 end;
