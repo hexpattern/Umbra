@@ -110,7 +110,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 		ImageColor3 = Type2Color[Type:lower()], ImageTransparency = 1, ScaleType = "Slice", SliceCenter = Rect.new(95, 95, 205, 205)
 	}); New("UICorner", {Parent = Frame, CornerRadius = UDim.new(0, 9)}); New("UICorner", {Parent = DropShadow, CornerRadius = UDim.new(0, 9)});
 	local Header = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.237, 0, 0.172, 0), Size = UDim2.new(0.4, 0, 0.358, 0), ZIndex = 2, Font = "GothamMedium",
-		Text = Title or " ", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+		Text = Title or " ", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1), TextWrapped = false
 	}); Nord:TextConstraint(Header);
 	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "Gotham",
 		Text = Message, TextSize = 12, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
