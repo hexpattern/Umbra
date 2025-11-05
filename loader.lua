@@ -1,5 +1,5 @@
 repeat task.wait(0.10) until game:IsLoaded();
-
+_G.Config = { ["Theme"] = "Dark" };
 local NotifyLib = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hexpattern/Umbra/refs/heads/main/Main/Module/Notification.lua", true))();
 local MarketplaceService = game:GetService("MarketplaceService");
 local Players = game:GetService("Players");
