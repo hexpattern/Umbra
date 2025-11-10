@@ -17,7 +17,7 @@ local function safeRequest(url)
     local response = request and request({Url = url}) or {Body = game:HttpGet(url)};
     local scriptContent = response.Body;
 
-    if not scriptContent or scriptContent = "" then
+    if not scriptContent or scriptContent == "" then
         NotifyLib:Notify("URL Error", "Failed to fetch script from URL.", "error", 10);
         return false;
     end;
