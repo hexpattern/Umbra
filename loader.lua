@@ -45,7 +45,7 @@ local GameID = game.GameId;
 local ScriptURL = Scripts[GameID];
 
 if ScriptURL then
-	safeRequest(ScriptURL); safeRequest("c2c")
+	safeRequest(ScriptURL);
 else
 	NotifyLib:Notify("Failed to Load", "Experience not supported.", "warn", 10);
 end;
